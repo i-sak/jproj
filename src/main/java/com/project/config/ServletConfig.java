@@ -36,11 +36,11 @@ public class ServletConfig implements WebMvcConfigurer {
 		CommonsMultipartResolver resolver = new CommonsMultipartResolver();
 		
 		// 10MB
-		resolver.setMaxUploadSize(1024*1024*10);
+		resolver.setMaxUploadSize(1024 * 1024 * 10);
 		// 2MB
-		resolver.setMaxUploadSizePerFile(1024*1024*2);
+		resolver.setMaxUploadSizePerFile(1024 * 1024 * 2);
 		// 1MB
-		resolver.setMaxInMemorySize(1024*1024);
+		resolver.setMaxInMemorySize(1024 * 1024);
 		// temp upload
 		resolver.setUploadTempDir(new FileSystemResource("C:\\ftmp"));
 		
